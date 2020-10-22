@@ -163,12 +163,38 @@ loop:
 done:
 ```
 
-switch语句
+### 过程
 
+运行时栈
+![Image text](../image/46.png)
 
+控制转移
 
+![Image text](../image/47.png)
 
+数据传送
+![Image text](../image/48.png)
 
+寄存器中的局部存储空间
+
+被调用者保存：%rbx、%rbp 和 %r8~%r15 \
+其余为调用者保存
+
+### 浮点代码
+
+AVX浮点体系结构
+
+YM寄存器 256位（32字节） XMM寄存器 128位（16字节）
+
+![Image text](../image/49.png)
+
+浮点传送和转换操作
+
+![Image text](../image/50.png)
+
+![Image text](../image/51.png)
+
+![Image text](../image/52.png)
 
 
 
