@@ -25,14 +25,24 @@ rmmovq %rsp, 0x123456789abcd(%rdx)
 ### Y86-64异常
 ![Image text](../image/5.jpg)
 
+## Y86-64的顺序实现
+
 ### 将处理组织成阶段
-+ 取指：指令指示字节icode和ifun。取出寄存器指示符字节rA和rB。取出一个8字节常数字valC\
-它按顺序方式计算当前下一条指令的地址valP
-+ 译码：从寄存器文件读入最多两个操作数得到valA和valB
-+ 执行：ALU执行得到的值valE。可能设置条件码
-+ 访存：写入内存或从内存读出数据。读出的值valM
-+ 写回：最多可以写两个结果到寄存器文件
-+ 更新PC：将PC设置为下一条指令的地址
+
+![Image text](../image/53.png)
+
+![Image text](../image/54.png)
+
+![Image text](../image/55.png)
+
+![Image text](../image/56.png)
+
+
+![Image text](../image/57.png)
+
+e.g.
+
+![Image text](../image/58.png)
 
 ![Image text](../image/6.jpg)
 ![Image text](../image/7.jpg)
